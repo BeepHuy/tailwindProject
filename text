@@ -1,0 +1,22 @@
+npm init -y
+npm install -D tailwindcss postcss autoprefixer vite
+npx tailwindcss  init -p
+
+Vào pakckage.json  
+"dev": "vite",
+ npm run dev
+
+ tao file css tailwind.css  :
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
+npx tailwindcss-cli build css/tailwind.css -o build/tailwind.css
+npm install -D @tailwindcss/jit --force
+
+
+npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch
+Vào pakckage.json  
+"dev": "vite",
+"watch": "npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch"
+ npm run watch
