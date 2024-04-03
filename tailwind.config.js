@@ -5,7 +5,11 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'box0': '0px 2px 2px 5px #8080800d',
+        'box0': '1px 1px 10px 2px #e7dcdc',
+      },
+      dropShadow: {
+        'text0': '1px -2px 1px #161421',
+        'textIB': '2px 1px 1px #34495e',
       }
     },
   },
