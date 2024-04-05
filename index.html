@@ -17,195 +17,170 @@
 
 <body>
     <div class="w-full bg-[#fff] relative">
-        <!-- <div class="w-full h-[45px] bg-gray-500 absolute top-[0px] hidden">
-            <div class="w-[905px] m-auto h-full flex justify-between leading-[45px] ">
-                <div>
-                    <a href="" class="flex mt-2">
-                        <img class="w-8 object-cover rounded-[50%]" src="./images/logo.jpg" alt="logo Kyren Huy" />
-                        <strong class="pl-2 text-xl text-[#2f2d3a] font-semibold">Kyren</strong>
-                    </a>
+        <div class="w-full h-auto bg-[#efeff7] pt-[25px] pb-10 ">
+            <div class="w-[905px] m-auto sm:w-full">
+                <div class="mb-16">
+                    <div class="w-full h-[45px] flex justify-between leading-[45px] sm:px-3">
+                        <div>
+                            <a href="" class="flex mt-2">
+                                <img class="w-8 object-cover rounded-[50%]" src="./images/logo.jpg" alt="logo Kyren Huy" />
+                                <strong class="pl-2 text-xl text-[#2f2d3a] font-semibold">Kyren</strong>
+                            </a>
+                        </div>
+                        <div class="md:hidden relative">
+                            <input type="text" placeholder="Search value" class="w-[350px] rounded-md px-2 outline-none" />
+                            <a href="#" class="absolute top-0 right-0 bg-[#f66962] px-1.5 rounded-r-md">
+                                <i class="fa-solid fa-magnifying-glass text-[20px] py-2 px-2"></i>
+                            </a>
+                        </div>
+                        <div class="sm:hidden">
+                            <a href="#"
+                                class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
+                                Home
+                                <i class="ml-2 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
+                                Pages
+                                <i class="ml-2 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
+                                Couress
+                                <i class="ml-2 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
+                                Features
+                                <i class="ml-2 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
+                                Blog
+                                <i class="ml-2 fa-solid fa-chevron-down"></i>
+                            </a>
+                            <a href="#"
+                                class="inline-flex items-center text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
+                                Shop
+                                <i class="ml-2 fa-solid fa-chevron-down"></i>
+                            </a>
+                        </div>
+                        <div class="flex sm:hidden">
+                            <a href="#" class="p-1 mr-1">
+                                <i class="fa-solid fa-magnifying-glass text-[20px] py-2 px-2"></i>
+                            </a>
+                            <a href="#" class="p-1">
+                                <i class="fa-solid fa-cart-shopping text-[20px] py-2 px-2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="p-1 md:hidden">
+                                <i class="fa-solid fa-cart-shopping text-[20px] py-2 px-2"></i>
+                            </a>
+                            <button
+                                class="px-3 bg-[#f66962] rounded-[4px] text-white hover:opacity-70 transition duration-500">
+                                Register
+                            </button>
+                            <a href="#" class="p-1 js-by-bar md:hidden">
+                                <i class="fa-solid fa-bars text-[20px] py-2 px-2"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="modal js-modal fixed top-0 right-0 bottom-0 left-0 z-10 bg-[#969ca07d] hidden md:hidden">
+                        <div class="js-modal-container animate-slowA bg-white w-80 h-full absolute right-0 top-0">
+                            <i class="js-modal-close fa-solid fa-bars p-4 cursor-pointer"></i>
+                            <hr>
+                            <ul>
+                                <li class="px-4 bg-[#e0e8f6] shadow-boxmobe my-2 hover:shadow-boxmobehove hover:bg-[#f0f8ff] cursor-pointer">Home</li>
+                                <li class="px-4 bg-[#e0e8f6] shadow-boxmobe my-2 hover:shadow-boxmobehove hover:bg-[#f0f8ff] cursor-pointer">Pages</li>
+                                <li class="px-4 bg-[#e0e8f6] shadow-boxmobe my-2 hover:shadow-boxmobehove hover:bg-[#f0f8ff] cursor-pointer">Couress</li>
+                                <li class="px-4 bg-[#e0e8f6] shadow-boxmobe my-2 hover:shadow-boxmobehove hover:bg-[#f0f8ff] cursor-pointer">Features</li>
+                                <li class="px-4 bg-[#e0e8f6] shadow-boxmobe my-2 hover:shadow-boxmobehove hover:bg-[#f0f8ff] cursor-pointer">Blog</li>
+                                <li class="px-4 bg-[#e0e8f6] shadow-boxmobe my-2 hover:shadow-boxmobehove hover:bg-[#f0f8ff] cursor-pointer">Shop</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div>
-                    <a href="#"
-                        class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                        Home
-                        <i class="ml-2 fa-solid fa-chevron-down"></i>
-                    </a>
-                    <a href="#"
-                        class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                        Pages
-                        <i class="ml-2 fa-solid fa-chevron-down"></i>
-                    </a>
-                    <a href="#"
-                        class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                        Couress
-                        <i class="ml-2 fa-solid fa-chevron-down"></i>
-                    </a>
-                    <a href="#"
-                        class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                        Features
-                        <i class="ml-2 fa-solid fa-chevron-down"></i>
-                    </a>
-                    <a href="#"
-                        class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                        Blog
-                        <i class="ml-2 fa-solid fa-chevron-down"></i>
-                    </a>
-                    <a href="#"
-                        class="inline-flex items-center text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                        Shop
-                        <i class="ml-2 fa-solid fa-chevron-down"></i>
-                    </a>
-                </div>
-                <div class="flex">
-                    <a href="#" class="p-1 mr-1">
-                        <i class="fa-solid fa-magnifying-glass text-[20px] py-2 px-2"></i>
-                    </a>
-                    <a href="#" class="p-1">
-                        <i class="fa-solid fa-cart-shopping text-[20px] py-2 px-2"></i>
-                    </a>
-                </div>
-                <div>
+                <div class="w-full flex justify-between mb-11 target:items-center sm:px-3">
+                    <h1 class="text-3xl text-[#2f2d3a] font-medium">Welcome back, ready for your next lesson?</h1>
                     <button
-                        class="px-3 bg-[#f66962] rounded-[4px] text-white hover:opacity-70 transition duration-500">Register</button>
+                        class="px-5 py-3 text-[#f66962] border-2 border-[#f66962] rounded hover:drop-shadow-textIB sm:p-2.5">
+                        View Hostory
+                    </button>
                 </div>
-            </div>
-        </div> -->
-
-        <div class="w-full h-[530px] bg-[#efeff7] pt-[25px]">
-            <div class="mb-16">
-                <div class="w-[905px] m-auto h-[45px] flex justify-between leading-[45px] md:w-[768px]">
-                    <div>
-                        <a href="" class="flex mt-2">
-                            <img class="w-8 object-cover rounded-[50%]" src="./images/logo.jpg" alt="logo Kyren Huy" />
-                            <strong class="pl-2 text-xl text-[#2f2d3a] font-semibold">Kyren</strong>
-                        </a>
-                    </div>
-                    <div class="md:hidden">
-                        <a href="#"
-                            class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                            Home
-                            <i class="ml-2 fa-solid fa-chevron-down"></i>
-                        </a>
-                        <a href="#"
-                            class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                            Pages
-                            <i class="ml-2 fa-solid fa-chevron-down"></i>
-                        </a>
-                        <a href="#"
-                            class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                            Couress
-                            <i class="ml-2 fa-solid fa-chevron-down"></i>
-                        </a>
-                        <a href="#"
-                            class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                            Features
-                            <i class="ml-2 fa-solid fa-chevron-down"></i>
-                        </a>
-                        <a href="#"
-                            class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                            Blog
-                            <i class="ml-2 fa-solid fa-chevron-down"></i>
-                        </a>
-                        <a href="#"
-                            class="inline-flex items-center text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
-                            Shop
-                            <i class="ml-2 fa-solid fa-chevron-down"></i>
-                        </a>
-                    </div>
-                    <div class="flex">
-                        <a href="#" class="p-1 mr-1">
-                            <i class="fa-solid fa-magnifying-glass text-[20px] py-2 px-2"></i>
-                        </a>
-                        <a href="#" class="p-1">
-                            <i class="fa-solid fa-cart-shopping text-[20px] py-2 px-2"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <button
-                            class="px-3 bg-[#f66962] rounded-[4px] text-white hover:opacity-70 transition duration-500">Register</button>
-                        <!-- <img src="./images/user.png" alt="User" class="w-8 h-8 object-cover rounded-[50%]">
-                        <a href="#" class="pl-2 text-xl font-medium">
-                            KyrenHuy
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="w-[905px] m-auto flex justify-between">
-                <h1 class="text-4xl text-[#2f2d3a] font-medium">Welcome back, ready for your next lesson?</h1>
-                <button
-                    class="mb-11 px-5 py-3 text-[#f66962] border-2 border-[#f66962] rounded hover:drop-shadow-textIB">View
-                    Hostory</button>
-            </div>
-            <div class="w-[905px] m-auto flex justify-between">
-                <div class="w-[442px] h-[160px] bg-white p-[16px] flex">
-                    <div class="w-[33%]">
-                        <img src="./images/products/lesson1.png" alt=""
-                            class="w-[115px] h-[130px] rounded-sm cursor-pointer">
-                    </div>
-                    <div class="w-[65%] flex flex-col">
-                        <span class="text-xs mb-[5px]">LESSON 5 OF | 5m</span>
-                        <p class="text-xl cursor-pointer">Megre Duplicates in Sketch - Inconsistent Symbols & Styles</p>
-                        <div class="flex my-[10px]">
-                            <img src="./images/useProduct/lesson1.png" alt=""
-                                class="w-[30px] h-[30px] object-cover mr-2 rounded-lg cursor-pointer">
-                            <span class="text-sm flex items-center">Nicoe Brown</span>
+                <div class="w-full flex justify-between  sm:flex-wrap sm:justify-center">
+                    <div class="w-[442px] h-[160px] bg-white p-[16px] flex sm:mb-5 sm:w-[80%] sm:h-[200px]">
+                        <div class="w-[33%]">
+                            <img src="./images/products/lesson1.png" alt=""
+                                class="w-[115px] h-[130px] rounded-sm cursor-pointer sm:h-full sm:w-full">
                         </div>
-                        <div class="relative bg-[#efeff7] h-[3px] p-[2px]">
-                            <div class="absolute top-0 left-0 w-4/5 h-1 bg-[#f68c1f]"></div>
+                        <div class="w-[65%] flex flex-col sm:pl-5">
+                            <span class="text-xs mb-[5px] sm:text-sm">LESSON 5 OF | 5m</span>
+                            <p class="text-xl cursor-pointer sm:text-2xl sm:my-2.5">Megre Duplicates in Sketch -
+                                Inconsistent Symbols & Styles</p>
+                            <div class="flex my-2.5 sm:my-[7px]">
+                                <img src="./images/useProduct/lesson1.png" alt=""
+                                    class="w-[30px] h-[30px] object-cover mr-2 rounded-lg cursor-pointer sm:w-[40px] sm:h-[40px]">
+                                <span class="text-sm flex items-center">Nicoe Brown</span>
+                            </div>
+                            <div class="relative bg-[#efeff7] h-[3px] p-[2px]">
+                                <div class="absolute top-0 left-0 w-4/5 h-1 bg-[#f68c1f]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[442px] h-[160px] bg-white p-[16px] flex mb-7  sm:mb-5 sm:w-[80%] sm:h-[200px]">
+                        <div class="w-[33%]">
+                            <img src="./images/products/lesson2.png" alt=""
+                                class="w-[115px] h-[130px] rounded-sm cursor-pointer sm:h-full sm:w-full">
+                        </div>
+                        <div class="w-[65%] flex flex-col sm:pl-5">
+                            <span class="text-xs mb-[5px] sm:text-sm">LESSON 5 OF | 5m</span>
+                            <p class="text-xl cursor-pointer sm:text-2xl sm:my-2.5">Megre Duplicates in Sketch - Inconsistent Symbols & Styles</p>
+                            <div class="flex my-2.5 sm:my-[7px]">
+                                <img src="./images/useProduct/lesson2.png" alt=""
+                                    class="w-[30px] h-[30px] object-cover mr-2 rounded-lg cursor-pointer sm:w-[40px] sm:h-[40px]">
+                                <span class="text-sm flex items-center">Nicoe Brown</span>
+                            </div>
+                            <div class="relative bg-[#efeff7] h-[3px] p-[2px]">
+                                <div class="absolute top-0 left-0 w-4/5 h-1 bg-[#f68c1f]"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-[442px] h-[160px] bg-white p-[16px] flex mb-7">
-                    <div class="w-[33%]">
-                        <img src="./images/products/lesson2.png" alt=""
-                            class="w-[115px] h-[130px] rounded-sm cursor-pointer">
+                <div class=" w-full flex items-center sm:hidden">
+                    <button id="prever" class="mr-2 px-[15px] py-[10px] rounded-md bg-white">
+                        <i class="fa-solid fa-arrow-left hover:text-[#f68c1f] focus:text-[#f68c1f]"></i>
+                    </button>
+                    <div class="relative w-full bg-white h-[3px] p-[2px]">
+                        <div id="loadA" class="absolute w-[40%] top-0 left-[0%] h-1 bg-[#f68c1f]"></div>
                     </div>
-                    <div class="w-[65%] flex flex-col">
-                        <span class="text-xs mb-[5px]">LESSON 5 OF | 5m</span>
-                        <p class="text-xl cursor-pointer">Megre Duplicates in Sketch - Inconsistent Symbols & Styles</p>
-                        <div class="flex my-[10px]">
-                            <img src="./images/useProduct/lesson2.png" alt=""
-                                class="w-[30px] h-[30px] object-cover mr-2 rounded-lg cursor-pointer">
-                            <span class="text-sm flex items-center">Nicoe Brown</span>
-                        </div>
-                        <div class="relative bg-[#efeff7] h-[3px] p-[2px]">
-                            <div class="absolute top-0 left-0 w-4/5 h-1 bg-[#f68c1f]"></div>
-                        </div>
-                    </div>
+                    <button id="next" class="ml-2 px-[15px] py-[10px] rounded-md bg-white">
+                        <i class="fa-solid fa-arrow-right hover:text-[#f68c1f] focus:text-[#f68c1f]"></i>
+                    </button>
                 </div>
             </div>
-            <div class=" w-[905px] flex m-auto items-center">
-                <button id="prever" class="mr-2 px-[15px] py-[10px] rounded-md bg-white">
-                    <i class="fa-solid fa-arrow-left hover:text-[#f68c1f] focus:text-[#f68c1f]"></i>
-                </button>
-                <div class="relative w-full bg-white h-[3px] p-[2px]">
-                    <div id="loadA" class="absolute w-[40%] top-0 left-[0%] h-1 bg-[#f68c1f]"></div>
-                </div>
-                <button id="next" class="ml-2 px-[15px] py-[10px] rounded-md bg-white">
-                    <i class="fa-solid fa-arrow-right hover:text-[#f68c1f] focus:text-[#f68c1f]"></i>
-                </button>
-            </div>
-
         </div>
-        <div class="w-full bg-[#fff]  py-[60px]">
-            <div class="w-[905px] m-auto">
-                <div class="flex justify-between items-center mb-[40px]">
+<!-- 1 -->
+        <div class="w-full bg-[#fff]  py-[60px] sm:py-10">
+            <div class="w-[905px] m-auto sm:w-full sm:px-3">
+                <div class="flex justify-between items-center mb-[30px]">
                     <h3 class="text-4xl text-[#2f2d3a]">Recommended For you</h3>
                     <div class="flex items-center">
                         <a href=""
                             class="text-base hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">Design <i
                                 class="fa-solid fa-chevron-down"></i></a>
                         <button
-                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500">VIew
-                            all</button>
+                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500">
+                            VIew all
+                        </button>
                     </div>
                 </div>
-                <div class="flex justify-between items-center flex-wrap">
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                <div class="flex justify-between items-center flex-wrap sm:px-2.5">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/design1.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -220,6 +195,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -235,9 +211,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/design2.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -252,6 +228,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer ">Everything You Need to know
                             About Businsess
                         </p>
@@ -267,9 +244,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/design3.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -284,6 +261,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -299,9 +277,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 mt-6">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/design4.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -316,6 +294,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -331,9 +310,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 mt-6">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/design5.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -348,6 +327,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -363,9 +343,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 mt-6">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/design6.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -380,6 +360,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -398,9 +379,10 @@
                 </div>
             </div>
         </div>
+<!-- 2 -->
         <div class="w-full bg-[#efeff7] py-[60px]">
-            <div class="w-[905px] m-auto">
-                <div class="flex justify-between items-center mb-[40px]">
+            <div class="w-[905px] m-auto sm:w-full sm:px-3">
+                <div class="flex justify-between items-center mb-[40px] sm:mb-[30px]">
                     <h3 class="text-4xl text-[#2f2d3a]">Get choice of your course</h3>
                     <div class="flex items-center">
                         <a href=""
@@ -411,10 +393,10 @@
                             all</button>
                     </div>
                 </div>
-                <div class="flex justify-between items-center flex-wrap mb-6">
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                <div class="flex justify-between items-center flex-wrap mb-6 sm:px-2.5">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/cousor1.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -429,6 +411,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -444,9 +427,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/cousor2.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -461,6 +444,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -476,9 +460,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/cousor3.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -493,6 +477,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -509,7 +494,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" w-full flex m-auto items-center">
+                <div class=" w-full flex m-auto items-center sm:hidden">
                     <button id="prever2" class="mr-2 px-[15px] py-[10px] rounded-md bg-white">
                         <i class="fa-solid fa-arrow-left hover:text-[#f68c1f] focus:text-[#f68c1f]"></i>
                     </button>
@@ -523,17 +508,19 @@
 
             </div>
         </div>
-        <div class="w-full h-[706px]">
-            <div class="w-[905px] m-auto py-[60px]">
-                <div class="flex justify-between items-center mb-[40px]">
+<!-- 3 -->
+        <div class="w-full h-auto py-[60px]">
+            <div class="w-[905px] m-auto sm:w-full px-3">
+                <div class="flex justify-between items-center mb-[30px]">
                     <h3 class="text-4xl text-[#2f2d3a]">Choice favourite course from top category</h3>
                     <button
-                        class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500">See
-                        all Categories</button>
+                        class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500 sm:w-[200px] sm:p-3">
+                        See all Categories
+                    </button>
                 </div>
 
-                <div class="flex justify-between flex-wrap">
-                    <div class="w-[210px] h-[240px] bg-[#efeff7] px-[20px] py-[30px]">
+                <div class="flex justify-between flex-wrap sm:px-6">
+                    <div class="w-[210px] h-[240px] bg-[#efeff7] px-[20px] py-[30px] my-2.5">
                         <i class="p-3 text-[#6456b0] bg-[#e2dcfe] rounded-sm fa-solid fa-swatchbook"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Design</h4>
                         <p class="text-sm text-justify">
@@ -541,7 +528,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#f68c1f] px-[20px] py-[30px]">
+                    <div class="w-[210px] h-[240px] bg-[#f68c1f] px-[20px] py-[30px] my-2.5">
                         <i class="p-3 text-[#ee8543] bg-white rounded-sm fa-solid fa-display"></i>
                         <h4 class="text-lg py-4 text-white font-semibold">Development</h4>
                         <p class="text-sm text-justify text-white">
@@ -549,7 +536,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#dcf7fe] px-[20px] py-[30px]">
+                    <div class="w-[210px] h-[240px] bg-[#dcf7fe] px-[20px] py-[30px] my-2.5">
                         <i class="p-3 text-[#48c2f2] bg-[#bbf0fe] rounded-sm fa-solid fa-wifi"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">IT & Software</h4>
                         <p class="text-sm text-justify">
@@ -557,7 +544,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#e5fae9] px-[20px] py-[30px]">
+                    <div class="w-[210px] h-[240px] bg-[#e5fae9] px-[20px] py-[30px] my-2.5">
                         <i class="p-3 text-[#68d675] bg-[#cef5d7] rounded-sm fa-solid fa-suitcase"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Business</h4>
                         <p class="text-sm text-justify">
@@ -565,7 +552,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#e5fae9] px-[20px] py-[30px] mt-6">
+                    <div class="w-[210px] h-[240px] bg-[#e5fae9] px-[20px] py-[30px] my-2.5">
                         <i class="p-3 text-[#6ed67b] bg-[#cef5d6] rounded-sm fa-solid fa-volume-high"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Marketing</h4>
                         <p class="text-sm text-justify">
@@ -573,7 +560,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#dcf7fe] px-[20px] py-[30px] mt-6">
+                    <div class="w-[210px] h-[240px] bg-[#dcf7fe] px-[20px] py-[30px] my-2.5">
                         <i class="p-3 text-[#47c2f1] bg-[#bbf0fe] rounded-sm fa-solid fa-camera"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Photography</h4>
                         <p class="text-sm text-justify">
@@ -581,7 +568,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#fdf3e9] px-[20px] py-[30px] mt-6">
+                    <div class="w-[210px] h-[240px] bg-[#fdf3e9] px-[20px] py-[30px] my-2.5">
                         <i class="p-3 text-[#ef965e] bg-[#fae0d1] rounded-sm fa-regular fa-heart"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Health & Care</h4>
                         <p class="text-sm text-justify">
@@ -589,7 +576,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#e6e6ed] px-[20px] py-[30px] mt-6">
+                    <div class="w-[210px] h-[240px] bg-[#e6e6ed] px-[20px] py-[30px] my-2.5">
                         <i class="p-3 text-[#5444a7] bg-[#d9d3f4] rounded-sm fa-solid fa-microchip"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Technology</h4>
                         <p class="text-sm text-justify">
@@ -600,8 +587,9 @@
                 </div>
             </div>
         </div>
+<!-- 4 -->
         <div class="w-full bg-[#fef0ef]">
-            <div class="w-[905px] h-[300px] m-auto flex flex-col py-[60px] items-center">
+            <div class="w-[905px] h-auto m-auto flex flex-col py-[60px] items-center sm:w-full">
                 <h2 class="text-[#2f2d3a] text-3xl"> Online Coaching Lessons For Remote Learning.</h2>
                 <span class="my-[40px]">100% online learning from the word's best universities and companies</span>
                 <button
@@ -609,23 +597,25 @@
                     Today</button>
             </div>
         </div>
+<!-- 5 -->
         <div class="w-full bg-[#ffff] py-[60px]">
-            <div class="w-[905px] m-auto">
+            <div class="w-[905px] m-auto sm:w-full px-3">
                 <div class="flex justify-between items-center mb-[40px]">
                     <h3 class="text-4xl text-[#2f2d3a]">Top courses in Personal Development</h3>
-                    <div class="flex items-center">
+                    <div class="flex items-center sm:w-[205px]">
                         <a href=""
                             class="text-base hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">Design <i
                                 class="fa-solid fa-chevron-down"></i></a>
                         <button
-                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500">VIew
-                            all</button>
+                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500">
+                            VIew all
+                        </button>
                     </div>
                 </div>
-                <div class="flex justify-between items-center flex-wrap">
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                <div class="flex justify-between items-center flex-wrap sm:px-2.5">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/porsenal1.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -640,6 +630,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -655,9 +646,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/porsenal2.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -672,6 +663,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -687,9 +679,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/porsenal3.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -704,6 +696,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -719,9 +712,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 mt-6">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/porsenal4.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -736,6 +729,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -751,9 +745,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 mt-6">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/porsenal5.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -768,6 +762,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -783,9 +778,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 mt-6">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/porsenal6.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -800,6 +795,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -818,8 +814,9 @@
                 </div>
             </div>
         </div>
+<!-- 6 -->
         <div class="w-full bg-[#fef0ef]">
-            <div class="w-[905px] m-auto py-[60px]">
+            <div class="w-[905px] m-auto py-[60px] sm:w-full sm:px-3">
                 <div class="flex justify-between items-center mb-[40px]">
                     <h3 class="text-4xl text-[#2f2d3a]">Students are viewing</h3>
                     <div class="flex items-center">
@@ -831,10 +828,10 @@
                             all</button>
                     </div>
                 </div>
-                <div class="flex justify-between items-center flex-wrap mb-6">
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                <div class="flex justify-between items-center flex-wrap mb-6 sm:px-2.5">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/cousor1.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -849,6 +846,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Everything You Need to know
                             About Businsess
                         </p>
@@ -864,9 +862,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/cousor2.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -881,6 +879,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">Statistics Data Science and
                             Business Analysis
                         </p>
@@ -896,9 +895,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3">
+                    <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[350px] sm:h-[430px] sm:p-5">
                         <img src="./images/products/cousor3.png" alt=""
-                            class="w-[100%] h-[65%] object-cover mb-[15px] rounded cursor-pointer">
+                            class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer">
                         <ul class="flex justify-between">
                             <li class="flex items-center">
                                 <i class="text-sm text-[#ecb248] mr-[6px] fa-regular fa-star"></i>
@@ -913,6 +912,7 @@
                                 <span class="text-xs">36 Lesion</span>
                             </li>
                         </ul>
+                        <hr class="my-1.5">
                         <p class="text-[#2f2d3a] text-xl font-medium my-1 cursor-pointer">AWS Certified Solutions
                             Architect Associate
                         </p>
@@ -929,7 +929,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" w-full flex m-auto items-center">
+                <div class=" w-full flex m-auto items-center sm:hidden">
                     <button id="prever3" class="mr-2 px-[15px] py-[10px] rounded-md bg-white">
                         <i class="fa-solid fa-arrow-left hover:text-[#f68c1f] focus:text-[#f68c1f]"></i>
                     </button>
@@ -942,9 +942,10 @@
                 </div>
             </div>
         </div>
+<!-- 7 -->
         <div class="w-full h-[410px] bg-[#282834] pt-[60px]">
-            <div class="w-[905px] m-auto ">
-                <div class="flex justify-between">
+            <div class="w-[905px] m-auto sm:w-full sm:px-3">
+                <div class="flex justify-between flex-wrap">
                     <div>
                         <h3 class="text-white text-xl mb-[30px]">Company</h3>
                         <ul class="">

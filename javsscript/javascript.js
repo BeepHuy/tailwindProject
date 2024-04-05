@@ -1,3 +1,26 @@
+const buyBtns = document.querySelectorAll(".js-by-bar");
+const modal = document.querySelector(".js-modal");
+const modalContainer = document.querySelector(".js-modal-container");
+function showBuyTicket() {
+  modal.classList.add("flex");
+  modal.classList.remove("hidden");
+}
+for (const buyBtn of buyBtns) {
+  buyBtn.addEventListener("click", showBuyTicket);
+}
+
+const modalClose = document.querySelector(".js-modal-close");
+
+function hideBuyTicket() {
+  modal.classList.remove("flex");
+  modal.classList.add("hidden");
+}
+modalClose.addEventListener("click", hideBuyTicket);
+modal.addEventListener("click", hideBuyTicket);
+modalContainer.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
 function initializeProgressBar() {
   let currentPosition = 0; // Vị trí ban đầu
   const progressBar = document.querySelector("#loadA");
