@@ -4,7 +4,7 @@ module.exports = {
   content: ["./**/*.html", "./**/*.{js,jsx,ts,tsx,vue}"],
   theme: {
     screens: {
-      x: { max: "480px" },
+      mb: { max: "480px" },
       xs: { min: "481px", max: "639px" },
       sm: { min: "642px", max: "768px" },
       md: { min: "769px", max: "1600px" },

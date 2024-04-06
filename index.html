@@ -17,7 +17,7 @@
 
 <body>
     <div class="w-full bg-[#fff] relative">
-        <div  id="header1" class="w-full bg-[#efeff7] fixed z-10 shadow-boxH hidden animate-slowHD">
+        <div id="header1" class="w-full bg-[#efeff7] fixed z-10 shadow-boxH hidden animate-slowHD mb:hidden">
             <div class="w-[905px] m-auto h-20 flex justify-between leading-[45px] py-5 animate-slowHD sm:w-full sm:px-3 xs:w-full xs:px-2">
                 <div>
                     <a href="" class="flex mt-2">
@@ -85,10 +85,10 @@
                 </div>
             </div>
         </div>
-        <div id="header2" class="w-full h-auto bg-[#efeff7] pt-[25px] pb-10 ">
-            <div class="w-[905px] m-auto sm:w-full xs:w-full sm:px-3 xs:px-2">
-                <div class="mb-16 xs:mb-10">
-                    <div class="w-full h-[45px] flex justify-between leading-[45px] ">
+        <div id="header2" class="w-full h-auto bg-[#efeff7] pt-[25px] pb-10 mb:pt-0 mb:pb-0">
+            <div class="w-[905px] m-auto sm:w-full xs:w-full sm:px-3 xs:px-2 mb:w-full mb:px-1.5">
+                <div class="mb-16 xs:mb-10 mb:mb-0">
+                    <div class="w-full h-[45px] flex justify-between leading-[45px] mb:leading-none mb:items-center">
                         <div>
                             <a href="" class="flex mt-2">
                                 <img class="w-8 object-cover rounded-[50%]" src="./images/logo.jpg"
@@ -96,14 +96,14 @@
                                 <strong class="pl-2 text-xl text-[#2f2d3a] font-semibold">Kyren</strong>
                             </a>
                         </div>
-                        <div class="md:hidden relative">
+                        <div class="md:hidden relative mb:hidden">
                             <input type="text" placeholder="Search value"
                                 class="w-full rounded-md px-2 outline-none" />
                             <a href="#" class="absolute top-0 right-0 bg-[#f66962] px-1.5 rounded-r-md">
                                 <i class="fa-solid fa-magnifying-glass text-[20px] py-2 px-2"></i>
                             </a>
                         </div>
-                        <div class="sm:hidden xs:hidden">
+                        <div class="sm:hidden xs:hidden mb:hidden">
                             <a href="#"
                                 class="inline-flex items-center mr-5 text-base font-medium hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">
                                 Home
@@ -135,7 +135,7 @@
                                 <i class="ml-2 fa-solid fa-chevron-down"></i>
                             </a>
                         </div>
-                        <div class="flex sm:hidden xs:hidden">
+                        <div class="flex sm:hidden xs:hidden mb:hidden">
                             <a href="#" class="p-1 mr-1">
                                 <i class="fa-solid fa-magnifying-glass text-[20px] py-2 px-2"></i>
                             </a>
@@ -144,11 +144,11 @@
                             </a>
                         </div>
                         <div>
-                            <a href="#" class="p-1 md:hidden xs:hidden">
+                            <a href="#" class="p-1 md:hidden xs:hidden mb:hidden">
                                 <i class="fa-solid fa-cart-shopping text-[20px] py-2 px-2"></i>
                             </a>
                             <button
-                                class="px-3 bg-[#f66962] rounded-[4px] text-white hover:opacity-70 transition duration-500">
+                                class="px-3 bg-[#f66962] rounded-[4px] text-white hover:opacity-70 transition duration-500 mb:p-1.5">
                                 Register
                             </button>
                             <a href="#" class="p-1 js-by-bar md:hidden">
@@ -159,7 +159,7 @@
                     </div>
                     <div
                         class="modal js-modal fixed top-0 right-0 bottom-0 left-0 z-10 bg-[#969ca07d] hidden md:hidden">
-                        <div class="js-modal-container animate-slowA bg-white w-80 h-full absolute right-0 top-0">
+                        <div class="js-modal-container animate-slowA bg-white w-80 h-full absolute right-0 top-0 mb:w-full">
                             <i class="js-modal-close fa-solid fa-bars p-4 cursor-pointer"></i>
                             <hr>
                             <ul>
@@ -188,48 +188,51 @@
                             </ul>
                         </div>
                     </div>
-
+                    <div class="hidden mb:flex w-full relative mt-2.5 mb-8">
+                        <input type="Search value..." class="w-full rounded">
+                        <i class="fa-solid fa-magnifying-glass absolute top-0 right-0 p-[5px] text-white bg-[#f66962] rounded-r"></i>
+                    </div>
                 </div>
-                <div class="w-full flex justify-between mb-11 target:items-center">
+                <div class="w-full flex justify-between mb-11 target:items-center mb:hidden">
                     <h1 class="text-3xl text-[#2f2d3a] font-medium xs:text-3xl">Welcome back, ready for your next lesson?</h1>
                     <button
                         class="px-5 py-3 text-[#f66962] border-2 border-[#f66962] rounded hover:drop-shadow-textIB sm:p-2.5 xs:p-0 xs:h-[50px] xs:w-40">
                         View Hostory
                     </button>
                 </div>
-                <div class="w-full flex justify-between  sm:flex-wrap sm:justify-center xs:flex-wrap xs:justify-center">
-                    <div class="slide w-[442px] h-[160px] bg-white p-[16px] flex sm:mb-5 sm:w-[90%] sm:h-[200px]">
+                <div class="w-full flex justify-between flex-wrap sm:justify-center xs:justify-center mb:w-full">
+                    <div class="slide w-[442px] h-[160px] bg-white p-4 flex sm:mb-5 sm:w-[90%] sm:h-[200px] mb:mb-5">
                         <div class="w-[33%]">
                             <img src="./images/products/lesson1.png" alt=""
                                 class="w-[115px] h-[130px] rounded-sm cursor-pointer sm:h-full sm:w-full">
                         </div>
-                        <div class="w-[65%] flex flex-col sm:pl-5">
+                        <div class="w-[65%] flex flex-col sm:pl-5 mb:ml-3">
                             <span class="text-xs mb-[5px] sm:text-sm sm:mb-0">LESSON 5 OF | 5m</span>
-                            <p class="text-xl cursor-pointer sm:text-2xl sm:my-2.5">Megre Duplicates in Sketch -
+                            <p class="text-xl cursor-pointer sm:text-2xl sm:my-2.5 mb:text-sm mb:my-[7px]">Megre Duplicates in Sketch -
                                 Inconsistent Symbols & Styles</p>
                             <div class="flex my-2.5 sm:my-[7px]">
                                 <img src="./images/useProduct/lesson1.png" alt=""
                                     class="w-[30px] h-[30px] object-cover mr-2 rounded-lg cursor-pointer sm:w-[40px] sm:h-[40px]">
-                                <span class="text-sm flex items-center">Nicoe Brown</span>
+                                <span class="text-sm flex items-center mb:text-xs">Nicoe Brown</span>
                             </div>
                             <div class="relative bg-[#efeff7] h-[3px] p-[2px]">
                                 <div class="absolute top-0 left-0 w-4/5 h-1 bg-[#f68c1f]"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="slide w-[442px] h-[160px] bg-white p-[16px] flex mb-7  sm:mb-5 sm:w-[90%] sm:h-[200px] xs:mb-0 xs:mt-8">
+                    <div class="slide w-[442px] h-[160px] bg-white p-4 flex mb-7  sm:mb-5 sm:w-[90%] sm:h-[200px] xs:mb-0 xs:mt-8 mb:mb-5">
                         <div class="w-[33%]">
                             <img src="./images/products/lesson2.png" alt=""
                                 class="w-[115px] h-[130px] rounded-sm cursor-pointer sm:h-full sm:w-full">
                         </div>
-                        <div class="w-[65%] flex flex-col sm:pl-5">
+                        <div class="w-[65%] flex flex-col sm:pl-5 mb:ml-3">
                             <span class="text-xs mb-[5px] sm:text-sm sm:mb-0">LESSON 5 OF | 5m</span>
-                            <p class="text-xl cursor-pointer sm:text-2xl sm:my-2.5">Megre Duplicates in Sketch -
+                            <p class="text-xl cursor-pointer sm:text-2xl sm:my-2.5 mb:text-sm mb:my-[7px]">Megre Duplicates in Sketch -
                                 Inconsistent Symbols & Styles</p>
                             <div class="flex my-2.5 sm:my-[7px]">
                                 <img src="./images/useProduct/lesson2.png" alt=""
                                     class="w-[30px] h-[30px] object-cover mr-2 rounded-lg cursor-pointer sm:w-[40px] sm:h-[40px]">
-                                <span class="text-sm flex items-center">Nicoe Brown</span>
+                                <span class="text-sm flex items-center mb:text-xs">Nicoe Brown</span>
                             </div>
                             <div class="relative bg-[#efeff7] h-[3px] p-[2px]">
                                 <div class="absolute top-0 left-0 w-4/5 h-1 bg-[#f68c1f]"></div>
@@ -275,7 +278,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" w-full flex items-center sm:hidden xs:hidden">
+                <div class=" w-full flex items-center sm:hidden xs:hidden mb:hidden">
                     <button id="prever" onclick="prevSlide()" class="mr-2 px-[15px] py-[10px] rounded-md bg-white">
                         <i class="fa-solid fa-arrow-left hover:text-[#f68c1f] focus:text-[#f68c1f]"></i>
                     </button>
@@ -289,21 +292,21 @@
             </div>
         </div>
         <!-- 1 -->
-        <div class="w-full bg-[#fff]  py-[60px] sm:py-10 xs:py-6">
-            <div class="w-[905px] m-auto sm:w-full sm:px-3 xs:w-full xs:px-2">
-                <div class="flex justify-between items-center mb-[30px]">
-                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl">Recommended For you</h3>
+        <div class="w-full bg-[#fff]  py-[60px] sm:py-10 xs:py-6 mb:py-4">
+            <div class="w-[905px] m-auto sm:w-full sm:px-3 xs:w-full xs:px-2 mb:w-full mb:px-1.5">
+                <div class="flex justify-between items-center mb-[30px] mb:flex-col mb:mb-3">
+                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl mb:text-[28px] mb:mb-2">Recommended For you</h3>
                     <div class="flex items-center xs:w-[220px]">
                         <a href=""
                             class="text-base hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">Design <i
                                 class="fa-solid fa-chevron-down"></i></a>
                         <button
-                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500">
+                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500 mb:p-1.5">
                             VIew all
                         </button>
                     </div>
                 </div>
-                <div class="flex justify-between items-center flex-wrap sm:px-2.5">
+                <div class="flex justify-between items-center flex-wrap sm:px-2.5 mb:flex-col">
                     <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[48%] sm:h-[430px] sm:p-5 xs:w-[48%] xs:h-[370px] xs:p-4">
                         <img src="./images/products/design1.png" alt=""
                             class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer xs:h-[60%] xs:max-h-48">
@@ -506,20 +509,20 @@
             </div>
         </div>
         <!-- 2 -->
-        <div class="w-full bg-[#efeff7] py-[60px] xs:py-6">
-            <div class="w-[905px] m-auto sm:w-full sm:px-3 xs:w-full xs:px-2">
-                <div class="flex justify-between items-center mb-[40px] sm:mb-[30px]">
-                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl">Get choice of your course</h3>
+        <div class="w-full bg-[#efeff7] py-[60px] xs:py-6 mb:py-4">
+            <div class="w-[905px] m-auto sm:w-full sm:px-3 xs:w-full xs:px-2 mb:w-full mb:px-1.5">
+                <div class="flex justify-between items-center mb-[40px] sm:mb-[30px] mb:flex-col mb:mb-3">
+                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl mb:text-[28px] mb:mb-2">Get choice of your course</h3>
                     <div class="flex items-center xs:w-[220px]">
                         <a href=""
                             class="text-base hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">Design <i
                                 class="fa-solid fa-chevron-down"></i></a>
                         <button
-                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500">VIew
+                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500 mb:p-[5px]">VIew
                             all</button>
                     </div>
                 </div>
-                <div class="flex justify-between items-center sm:flex-wrap mb-6 sm:px-2.5 xs:flex-wrap">
+                <div class="flex justify-between items-center sm:flex-wrap mb-6 sm:px-2.5 xs:flex-wrap mb:flex-col mb:mb-0">
                     <div
                         class="slide2 w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[48%] sm:h-[430px] sm:p-5 xs:w-[48%] xs:h-[370px] xs:p-4">
                         <img src="./images/products/cousor1.png" alt=""
@@ -691,7 +694,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" w-full flex m-auto items-center sm:hidden xs:hidden">
+                <div class=" w-full flex m-auto items-center sm:hidden xs:hidden mb:hidden">
                     <button id="prever2" onclick="prevSlide2()" class="mr-2 px-[15px] py-[10px] rounded-md bg-white">
                         <i class="fa-solid fa-arrow-left hover:text-[#f68c1f] focus:text-[#f68c1f]"></i>
                     </button>
@@ -706,18 +709,18 @@
             </div>
         </div>
         <!-- 3 -->
-        <div class="w-full h-auto py-[60px] xs:py-6">
-            <div class="w-[905px] m-auto sm:w-full px-3 xs:w-full xs:px-2">
-                <div class="flex justify-between items-center mb-[30px]">
-                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl">Choice favourite course from top category</h3>
+        <div class="w-full h-auto py-[60px] xs:py-6 mb:py-4">
+            <div class="w-[905px] m-auto sm:w-full px-3 xs:w-full xs:px-2 mb:w-full mb:px-1.5">
+                <div class="flex justify-between items-center mb-[30px] mb:flex-col mb:mb-3">
+                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl mb:text-[28px] mb:text-center mb:mb-2">Choice favourite course from top category</h3>
                     <button
-                        class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500 sm:w-[200px] sm:p-3 xs:w-[280px]">
+                        class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500 sm:w-[200px] sm:p-3 xs:w-[280px] mb:p-[5px]">
                         See all Categories
                     </button>
                 </div>
 
                 <div class="flex justify-between flex-wrap sm:px-6">
-                    <div class="w-[210px] h-[240px] bg-[#efeff7] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5">
+                    <div class="w-[210px] h-[240px] bg-[#efeff7] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5 mb:w-[48%] mb:h-full mb:p-1.5">
                         <i class="p-3 text-[#6456b0] bg-[#e2dcfe] rounded-sm fa-solid fa-swatchbook"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Design</h4>
                         <p class="text-sm text-justify">
@@ -725,7 +728,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#f68c1f] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5">
+                    <div class="w-[210px] h-[240px] bg-[#f68c1f] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5 mb:w-[48%] mb:h-full mb:p-1.5">
                         <i class="p-3 text-[#ee8543] bg-white rounded-sm fa-solid fa-display"></i>
                         <h4 class="text-lg py-4 text-white font-semibold">Development</h4>
                         <p class="text-sm text-justify text-white">
@@ -733,7 +736,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#dcf7fe] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5">
+                    <div class="w-[210px] h-[240px] bg-[#dcf7fe] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5 mb:w-[48%] mb:h-full mb:p-1.5">
                         <i class="p-3 text-[#48c2f2] bg-[#bbf0fe] rounded-sm fa-solid fa-wifi"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">IT & Software</h4>
                         <p class="text-sm text-justify">
@@ -741,7 +744,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#e5fae9] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5">
+                    <div class="w-[210px] h-[240px] bg-[#e5fae9] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5 mb:w-[48%] mb:h-full mb:p-1.5">
                         <i class="p-3 text-[#68d675] bg-[#cef5d7] rounded-sm fa-solid fa-suitcase"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Business</h4>
                         <p class="text-sm text-justify">
@@ -749,7 +752,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#e5fae9] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5">
+                    <div class="w-[210px] h-[240px] bg-[#e5fae9] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5 mb:w-[48%] mb:h-full mb:p-1.5">
                         <i class="p-3 text-[#6ed67b] bg-[#cef5d6] rounded-sm fa-solid fa-volume-high"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Marketing</h4>
                         <p class="text-sm text-justify">
@@ -757,7 +760,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#dcf7fe] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5">
+                    <div class="w-[210px] h-[240px] bg-[#dcf7fe] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5 mb:w-[48%] mb:h-full mb:p-1.5">
                         <i class="p-3 text-[#47c2f1] bg-[#bbf0fe] rounded-sm fa-solid fa-camera"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Photography</h4>
                         <p class="text-sm text-justify">
@@ -765,7 +768,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#fdf3e9] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5">
+                    <div class="w-[210px] h-[240px] bg-[#fdf3e9] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5 mb:w-[48%] mb:h-full mb:p-1.5">
                         <i class="p-3 text-[#ef965e] bg-[#fae0d1] rounded-sm fa-regular fa-heart"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Health & Care</h4>
                         <p class="text-sm text-justify">
@@ -773,7 +776,7 @@
                             in-depth, practical,easy
                         </p>
                     </div>
-                    <div class="w-[210px] h-[240px] bg-[#e6e6ed] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5">
+                    <div class="w-[210px] h-[240px] bg-[#e6e6ed] px-[20px] py-[30px] my-2.5 xs:w-[45%] xs:mx-2.5 mb:w-[48%] mb:h-full mb:p-1.5">
                         <i class="p-3 text-[#5444a7] bg-[#d9d3f4] rounded-sm fa-solid fa-microchip"></i>
                         <h4 class="text-lg py-4 text-[#2f2d3a] font-semibold">Technology</h4>
                         <p class="text-sm text-justify">
@@ -786,30 +789,30 @@
         </div>
         <!-- 4 -->
         <div class="w-full bg-[#fef0ef]">
-            <div class="w-[905px] h-auto m-auto flex flex-col py-[60px] items-center sm:w-full xs:w-full xs:text-center">
-                <h2 class="text-[#2f2d3a] text-3xl"> Online Coaching Lessons For Remote Learning.</h2>
-                <span class="my-[40px]">100% online learning from the word's best universities and companies</span>
+            <div class="w-[905px] h-auto m-auto flex flex-col py-[60px] items-center sm:w-full xs:w-full xs:text-center mb:w-full mb:px-1.5 mb:py-4 mb:text-center">
+                <h2 class="text-[#2f2d3a] text-3xl mb:text-[28px]"> Online Coaching Lessons For Remote Learning.</h2>
+                <span class="my-[40px] mb:m-3">100% online learning from the word's best universities and companies</span>
                 <button
                     class="px-[15px] py-[10px] bg-[#f66962] rounded text-white hover:opacity-70 transition duration-500">Join
                     Today</button>
             </div>
         </div>
         <!-- 5 -->
-        <div class="w-full bg-[#ffff] py-[60px] xs:py-6">
-            <div class="w-[905px] m-auto sm:w-full px-3 xs:w-full xs:px-2">
-                <div class="flex justify-between items-center mb-[40px]">
-                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl">Top courses in Personal Development</h3>
+        <div class="w-full bg-[#ffff] py-[60px] xs:py-6 mb:py-4">
+            <div class="w-[905px] m-auto sm:w-full px-3 xs:w-full xs:px-2 mb:w-full mb:px-1.5">
+                <div class="flex justify-between items-center mb-[40px] mb:flex-col mb:mb-3 mb:text-center">
+                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl mb:text-[28px] mb:mb-2">Top courses in Personal Development</h3>
                     <div class="flex items-center sm:w-[205px] xs:w-[260px]">
                         <a href=""
                             class="text-base hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">Design <i
                                 class="fa-solid fa-chevron-down"></i></a>
                         <button
-                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500">
+                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500 mb:p-1.5">
                             VIew all
                         </button>
                     </div>
                 </div>
-                <div class="flex justify-between items-center flex-wrap sm:px-2.5">
+                <div class="flex justify-between items-center flex-wrap sm:px-2.5 mb:flex-col">
                     <div class="w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[48%] sm:h-[430px] sm:p-5 xs:w-[48%] xs:h-[370px] xs:p-4">
                         <img src="./images/products/porsenal1.png" alt=""
                             class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer xs:h-[60%] xs:max-h-48">
@@ -1012,20 +1015,21 @@
             </div>
         </div>
         <!-- 6 -->
-        <div class="w-full bg-[#fef0ef] py-[60px] xs:py-6">
-            <div class="w-[905px] m-auto sm:w-full sm:px-3 xs:w-full xs:px-2">
-                <div class="flex justify-between items-center mb-[40px]">
-                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl">Students are viewing</h3>
+        <div class="w-full bg-[#fef0ef] py-[60px] xs:py-6 mb:py-4">
+            <div class="w-[905px] m-auto sm:w-full sm:px-3 xs:w-full xs:px-2 mb:w-full mb:px-1.5">
+                <div class="flex justify-between items-center mb-[40px] mb:flex-col mb:mb-3 mb:text-center">
+                    <h3 class="text-4xl text-[#2f2d3a] xs:text-3xl mb:text-[28px] mb:mb-2">Students are viewing</h3>
                     <div class="flex items-center xs:w-[220px]">
                         <a href=""
                             class="text-base hover:drop-shadow-text0 hover:text-[#16a085] hover:font-semibold">Design <i
                                 class="fa-solid fa-chevron-down"></i></a>
                         <button
-                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500">VIew
-                            all</button>
+                            class="ml-6 px-[15px] py-[10px] rounded text-white bg-[#f66962] hover:opacity-70 transition duration-500 mb:p-1.5">
+                            VIew all
+                        </button>
                     </div>
                 </div>
-                <div class="flex justify-between items-center flex-wrap mb-6 sm:px-2.5">
+                <div class="flex justify-between items-center flex-wrap mb-6 sm:px-2.5 mb:flex-col">
                     <div class="slide3 w-[287px] h-[400px] bg-white shadow-box0 p-3 my-2.5 sm:w-[48%] sm:h-[430px] sm:p-5 xs:w-[48%] xs:h-[370px] xs:p-4">
                         <img src="./images/products/cousor1.png" alt=""
                             class="w-[100%] h-[65%] object-cover mb-2.5 rounded cursor-pointer xs:h-[60%] xs:max-h-48">
@@ -1192,7 +1196,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" w-full flex m-auto items-center sm:hidden xs:hidden">
+                <div class=" w-full flex m-auto items-center sm:hidden xs:hidden mb:hidden">
                     <button id="prever3" onclick="prevSlide3()" class="mr-2 px-[15px] py-[10px] rounded-md bg-white">
                         <i class="fa-solid fa-arrow-left hover:text-[#f68c1f] focus:text-[#f68c1f]"></i>
                     </button>
@@ -1206,10 +1210,10 @@
             </div>
         </div>
         <!-- 7 -->
-        <div class="w-full h-[410px] bg-[#282834] pt-[60px]">
-            <div class="w-[905px] m-auto sm:w-full sm:px-3 xs:w-full xs:px-2">
-                <div class="flex justify-between flex-wrap">
-                    <div>
+        <div class="w-full h-auto bg-[#282834] pt-[60px]">
+            <div class="w-[905px] m-auto sm:w-full sm:px-3 xs:w-full xs:px-2 mb:w-full mb:px-1.5 mb:h-full">
+                <div class="flex justify-between flex-wrap mb:justify-center">
+                    <div class="w-[45%]">
                         <h3 class="text-white text-xl mb-[30px]">Company</h3>
                         <ul class="">
                             <li class="text-base leading-8 text-[#808089] font-medium">About</li>
@@ -1219,7 +1223,7 @@
                             <li class="text-base leading-8 text-[#808089] font-medium">Affiliates</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="w-[45%]">
                         <h3 class="text-white text-xl mb-[30px]">Community</h3>
                         <ul class="">
                             <li class="text-base leading-8 text-[#808089] font-medium">Go Premium</li>
@@ -1230,7 +1234,7 @@
                             <li class="text-base leading-8 text-[#808089] font-medium">Free Classes</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="w-[45%]">
                         <h3 class="text-white text-xl mb-[30px]">Teaching</h3>
                         <ul class="">
                             <li class="text-base leading-8 text-[#808089] font-medium">Become a</li>
@@ -1240,7 +1244,7 @@
                             <li class="text-base leading-8 text-[#808089] font-medium">Handbook</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="w-[45%]">
                         <h3 class="text-white text-xl mb-[30px]">Support</h3>
                         <ul class="">
                             <li class="text-base leading-8 text-[#808089] font-medium">Support</li>
@@ -1253,7 +1257,7 @@
                     </div>
                 </div>
                 <hr class="mt-[40px] mb-[20px]">
-                <div class="flex justify-between items-center">
+                <div class="flex justify-between items-center mb:text-center mb:flex-col-reverse">
                     <span class="text-base xs:text-sm text-[#808089] font-medium">@ 2015-2020 Skillfy Education Private limited.All
                         right reserved</span>
                     <div class="flext">
