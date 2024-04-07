@@ -96,21 +96,21 @@ function nextSlide() {
 showSlide();
 //
 function initializeProgressBar(progress, prevBtn, nexBtn) {
-  let currentPosition = 0; // Vị trí ban đầu
+  let currentPosition = 0;
   const progressBar = document.querySelector(progress);
 
   function updateProgressBar(delta) {
     currentPosition += delta;
-    currentPosition = Math.max(0, Math.min(60, currentPosition)); // Giới hạn vị trí trong khoảng từ 0 đến 60
+    currentPosition = Math.max(0, Math.min(60, currentPosition));
     progressBar.style.left = currentPosition + "%";
   }
 
   document.querySelector(prevBtn).addEventListener("click", function () {
-    updateProgressBar(-30); // Di chuyển về phía trái 30%
+    updateProgressBar(-30);
   });
 
   document.querySelector(nexBtn).addEventListener("click", function () {
-    updateProgressBar(30); // Di chuyển về phía phải 30%
+    updateProgressBar(30);
   });
 }
 
@@ -144,20 +144,14 @@ modalContainer.addEventListener("click", function (event) {
 });
 
 //header modal
-// Lấy chiều cao của header2
 var header2Height = document.getElementById("header2").offsetHeight;
 
-// Thêm sự kiện cho window khi cuộn trang
 window.addEventListener("scroll", function () {
-  // Lấy vị trí cuộn hiện tại của trang
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  // Nếu vị trí cuộn lớn hơn hoặc bằng chiều cao của header2
   if (scrollPosition >= header2Height) {
-    // Hiển thị header1
     document.getElementById("header1").classList.remove("hidden");
   } else {
-    // Ẩn header1
     document.getElementById("header1").classList.add("hidden");
   }
 });
@@ -166,18 +160,17 @@ window.addEventListener("scroll", function () {
 function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 }
 
-window.addEventListener('scroll', function() {
-  var header2 = document.getElementById('header2');
-  var smoothScroll = document.getElementById('smooth-scroll');
+window.addEventListener("scroll", function () {
+  var header2 = document.getElementById("header2");
+  var smoothScroll = document.getElementById("smooth-scroll");
 
-  // Kiểm tra khi cuộn hết header2
   if (window.scrollY >= header2.offsetHeight) {
-    smoothScroll.style.display = 'block'; // Hiển thị nút smooth scroll
+    smoothScroll.style.display = "block";
   } else {
-    smoothScroll.style.display = 'none'; // Ẩn nút smooth scroll
+    smoothScroll.style.display = "none";
   }
 });
