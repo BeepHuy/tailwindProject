@@ -161,3 +161,23 @@ window.addEventListener("scroll", function () {
     document.getElementById("header1").classList.add("hidden");
   }
 });
+
+//  hiển thị nút scrotroll mobile
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+window.addEventListener('scroll', function() {
+  var header2 = document.getElementById('header2');
+  var smoothScroll = document.getElementById('smooth-scroll');
+
+  // Kiểm tra khi cuộn hết header2
+  if (window.scrollY >= header2.offsetHeight) {
+    smoothScroll.style.display = 'block'; // Hiển thị nút smooth scroll
+  } else {
+    smoothScroll.style.display = 'none'; // Ẩn nút smooth scroll
+  }
+});
